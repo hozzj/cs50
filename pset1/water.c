@@ -1,16 +1,17 @@
 #include <stdio.h>
 #include <cs50.h>
 
-int main(void) {
+int main(void)
+{
     printf("minutes: ");
     int minutes = GetInt();
     
-    int ouncesPerMinute = 128 * 1.5;
-    int bottleOunces = 16;
-    int bottlesPerMinute = ouncesPerMinute / bottleOunces;
-    int bottlesWasted = minutes * bottlesPerMinute;
+    int ounces_per_minute = 128 * 1.5;
+    int bottle_ounces = 16;
+    int bottles_per_minute = ounces_per_minute / bottle_ounces;
+    int bottles_wasted = minutes * bottles_per_minute;
     
-    printf("bottles: %d\n", bottlesWasted);
+    printf("bottles: %d\n", bottles_wasted);
     
     return 0;
 }

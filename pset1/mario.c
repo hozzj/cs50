@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <cs50.h>
 
-int main(void) {
+int main(void) 
+{
 
     // make sure it is an integer
     int height;
-    do {
+    do 
+    {
         printf("height: ");
         height = GetInt();
     }
@@ -15,16 +17,18 @@ int main(void) {
     int hashes = 2;
 
     int i = 0;
-    while (i < height) {
-        
+    while (i < height) 
+    {    
         int j = 0;
-        while (j < spaces) {
+        while (j < spaces)
+        {
             printf(" ");
             j += 1;
         }
         
         int k = 0;
-        while (hashes > k) {
+        while (hashes > k) 
+        {
             printf("#");
             k += 1;
         }

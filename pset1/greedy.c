@@ -7,28 +7,38 @@
 #include <cs50.h>
 #include <math.h>
 
-int main(void) {
+int main(void) 
+{
     float cash;
     int count = 0;
-    do {
+    do 
+    {
         printf("How much change is owed?\n");
         cash = (GetFloat() * 100);
         cash = round(cash);
-    } while (cash < 0);
+    } 
+    while (cash < 0);
 
-    while (cash >= 25){
+    while (cash >= 25)
+    {
         cash -= 25;
         count += 1;
     }
-    while(cash >= 10 ){
+
+    while(cash >= 10 )
+    {
         cash -= 10;
         count += 1;
     }
-    while(cash >= 5){
+
+    while(cash >= 5)
+    {
         cash -= 5;
         count += 1;
     }
-    while (cash >= 1){
+    
+    while (cash >= 1)
+    {
         cash -= 1;
         count += 1;
     }
